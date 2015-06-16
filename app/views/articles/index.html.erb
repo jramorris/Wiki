@@ -1,0 +1,12 @@
+<h1>Articles</h1>
+<%= @articles.each do |art| %>
+<table>
+	<tr>
+		<td><%= art.title %></td>
+		<td><%= truncate(sanitize art.body , length: 15, separator: ' ') %></td>
+		<td><%= link_to 'Show', article_path(art) %></td>
+		<td><%= link_to 'Edit', edit_article_path(art) %></td>
+		<td><%= link_to 'Delete', article_path(art), data: { :confirm => 'Are you sure?' }, method: :delete %></td>
+	</tr>
+</table>
+<% end %>

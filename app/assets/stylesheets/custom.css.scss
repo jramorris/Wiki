@@ -1,0 +1,88 @@
+/* Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* footer */
+
+.footer {
+	background-color: #aaaaaa;
+	width: 90%;
+	margin: 50px auto 15px auto;
+	text-align: center;
+	a {
+	text-decoration: none;
+	}
+}
+
+.footer li {
+	display: inline;
+	padding: 0 10px 0 0;
+	text-decoration: none;
+}
+
+/* header */
+
+.header {
+	background-color: #aaaaaa;
+	width: 90%;
+	margin: 15px auto 15px auto;
+	a {
+	text-decoration: none;
+	}
+}
+
+.header li {
+	display: inline;
+	padding-left: 30px;
+}
+
+.header li:last-child {
+	float: right;
+	padding-right: 30px;
+}
+
+/* other */
+h1 {
+	text-align: center;
+	font-size: 36px;
+}
+p {
+	text-align:center;
+}
+.home {
+	color: #aaaa15;
+	background-image: url('bgt.jpg?h=1080&c=1&w=1920');
+	background-repeat:no-repeat;
+	background-position: center;
+	background-color: #000001;
+	background-size: 1333px 750px;
+	height: 750px;
+	p {
+		color: #aa0015;
+		font-size: 24px;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+}
+em {
+	font-style:italic;
+}

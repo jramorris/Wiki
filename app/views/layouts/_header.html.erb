@@ -1,0 +1,8 @@
+<ul class="header">
+	<li><%= link_to 'Wiki', root_path %>
+	<li><% if logged_in? %>
+				<%= link_to 'Log out', logout_path, method: "delete" %>
+			<% else %>
+				<%= link_to 'Log in', login_path %>
+			<% end %>
+</ul>

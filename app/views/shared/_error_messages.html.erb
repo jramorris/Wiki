@@ -1,0 +1,4 @@
+<% if @user.errors.any? %>
+	<%= pluralize(@user.errors.count, "error") %>: Invalid information
+	<%= @user.errors.full_messages %>
+<% end %>
