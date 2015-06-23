@@ -24,12 +24,17 @@ time, mark, audio, video {
 /* footer */
 
 .footer {
-	background-color: #aaaaaa;
+	background-color: #E9D8B7;
+	border-radius: 8px;
 	width: 90%;
-	margin: 50px auto 15px auto;
+	margin: 15px auto 15px auto;
+	padding: 10px 0;
 	text-align: center;
+	font-family:Century Gothic,sans-serif;
+	font-size:20px;
 	a {
 	text-decoration: none;
+	color: #002C6D;
 	}
 }
 
@@ -42,11 +47,16 @@ time, mark, audio, video {
 /* header */
 
 .header {
-	background-color: #aaaaaa;
+	background-color: #E9D8B7;
+	border-radius: 8px;
 	width: 90%;
 	margin: 15px auto 15px auto;
+	padding: 10px 0;
+	font-family:sans-serif;
+	font-size:20px;
 	a {
 	text-decoration: none;
+	color: #002C6D;
 	}
 }
 
@@ -64,6 +74,10 @@ time, mark, audio, video {
 h1 {
 	text-align: center;
 	font-size: 36px;
+}
+h2 {
+	font-size:24px;
+	text-align:center;
 }
 p {
 	text-align:center;
@@ -86,4 +100,18 @@ p {
 }
 em {
 	font-style:italic;
+}
+#container {
+	width:50%;
+	margin: 0 auto;
+	background-color:rgba(0, 0, 0, 0.5);
+	padding: 15px 15px 15px 15px;
+}
+.form {
+	margin: 0 auto;
+	td {
+	display:block;
+	text-align:center;
+	margin: 0 auto;
+	}
 }

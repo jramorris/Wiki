@@ -8,10 +8,12 @@
 </head>
 <body style="background-color:#000001;">
 	<%= render 'layouts/header' %>
-	<% flash.each do |type, msg| %>
-		<%= type %>: <%= msg %>
-	<% end %>
-	<%= yield %>
+	<div class="home">
+		<% flash.each do |type, msg| %>
+			<%= type %>: <%= msg %>
+		<% end %>
+		<%= yield %>
+	</div>
 	<%= render 'layouts/footer' %>
 	<%= debug(params) if Rails.env.development? %>
 </body>
