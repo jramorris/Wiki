@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   def index
-  	@user = User.all
+  	@users = User.all
   end
 
   def edit
@@ -38,8 +38,14 @@ class UsersController < ApplicationController
   end
 
   def destroy
-  	@user = User.find(params[:id]).destroy
-  	redirect_to users_path
+    if admin_present?
+      @user = User.find(params[:id]).destroy
+      flash[:success] = "user deleted"
+      redirect_to users_path
+    else
+      flash[:alert] = 'must be logged in to delete users'
+      redirect_to login_path
+    end
   end
 
   private

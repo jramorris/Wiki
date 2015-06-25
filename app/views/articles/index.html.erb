@@ -2,8 +2,9 @@
 	<h1>Articles</h1>
 </header>
 
-<% @articles.each do |art| %>
+<%= will_paginate %>
 <table>
+	<% @articles.each do |art| %>
 	<tr>
 		<td><%= art.title %></td>
 		<td><%= truncate(sanitize art.body , length: 15, separator: ' ') %></td>
@@ -11,6 +12,5 @@
 		<td><%= link_to 'Edit', edit_article_path(art) %></td>
 		<td><%= link_to 'Delete', article_path(art), data: { :confirm => 'Are you sure?' }, method: :delete %></td>
 	</tr>
+	<% end %>
 </table>
-<% end %>
-

@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
-  	@articles = Article.all
+  	@articles = Article.paginate(page: params[:page], per_page: 15)
   end
 
   def edit
@@ -34,14 +34,14 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    	@article = Article.find(params[:id])
-    	if @article.update_attributes(article_params)
-        flash[:success] = "#{@article.title} updated"
-        redirect_to article_path(@article)
-      else
-        flash.now[:danger] = "Invalid information"
-        render :edit
-      end
+  	@article = Article.find(params[:id])
+  	if @article.update_attributes(article_params)
+      flash[:success] = "#{@article.title} updated"
+      redirect_to article_path(@article)
+    else
+      flash.now[:danger] = "Invalid information"
+      render :edit
+    end
   end
 
   def destroy

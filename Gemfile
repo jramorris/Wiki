@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 # populate db
 gem 'faker'
+# pagination
+gem 'will_paginate', '~> 3.0.4'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -44,4 +47,8 @@ group :development, :test do
   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
   	gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
 	end
+end
+
+group :test do
+  gem 'factory_girl_rails', '~> 4.5.0'
 end

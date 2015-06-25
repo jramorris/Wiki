@@ -47,4 +47,9 @@ RSpec.describe UsersController, type: :controller do
 			expect(user.save).to be true
 		end
 	end
+
+	describe "#destroy"
+		it "does not delete users when not logged in as user"
+		end
+	end
 end

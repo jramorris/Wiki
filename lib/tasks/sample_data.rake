@@ -15,7 +15,8 @@ namespace :db do
     50.times do |n|
       n = Article.create(
         title: Faker::Lorem.words.join(' '),
-        body: Faker::Lorem.sentences.join('. ')
+        body: Faker::Lorem.sentences.join('. '),
+        updated_at: Faker::Time.between(5.days.ago, Time.now)
         )
     end
     User.create(name: "james morris",
