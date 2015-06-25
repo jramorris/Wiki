@@ -1,6 +1,8 @@
-<h1>Login</h1>
+<header>
+	<h1>Login</h1>
+</header>
 
-<div id="container">
+<div id="container-salmon">
 	<%= form_for(:session, url: login_path) do |f| %>
 	<table class="form">
 		<tr><td>
@@ -17,7 +19,6 @@
 
 		<tr><td>
 			<h3><%= f.label :remember_me, "Keep me logged in on this computer" %></h3>
-		</td><td>
 			<%= f.check_box :remember_me, { checked: true } %>
 		</td></tr>
 
@@ -27,3 +28,4 @@
 	</table>
 	<% end %>
 </div>
+

@@ -26,7 +26,7 @@ time, mark, audio, video {
 .footer {
 	background-color: #E9D8B7;
 	border-radius: 8px;
-	width: 90%;
+	width: 70%;
 	margin: 15px auto 15px auto;
 	padding: 10px 0;
 	text-align: center;
@@ -34,7 +34,7 @@ time, mark, audio, video {
 	font-size:20px;
 	a {
 	text-decoration: none;
-	color: #002C6D;
+	color: #5C2A19;
 	}
 }
 
@@ -49,14 +49,14 @@ time, mark, audio, video {
 .header {
 	background-color: #E9D8B7;
 	border-radius: 8px;
-	width: 90%;
+	width: 70%;
 	margin: 15px auto 15px auto;
 	padding: 10px 0;
 	font-family:sans-serif;
 	font-size:20px;
 	a {
 	text-decoration: none;
-	color: #002C6D;
+	color: #5C2A19;
 	}
 }
 
@@ -71,26 +71,31 @@ time, mark, audio, video {
 }
 
 /* other */
+body {
+	width:75%;
+	margin: 0 auto;
+}
 h1 {
 	text-align: center;
 	font-size: 36px;
 }
 h2 {
-	font-size:24px;
+	font-size:28px;
 	text-align:center;
 }
 p {
 	text-align:center;
 	color:#ffffff;
 }
-.home {
-	color: #aaaa15;
+.background {
+	color: #E9D8B7;
 	background-image: url('bgt.jpg?h=1080&c=1&w=1920');
 	background-repeat:no-repeat;
 	background-position: center;
 	background-color: #000001;
 	background-size: 1333px 750px;
 	height: 750px;
+	padding:15px 0 15px 0;
 	p {
 		color: #aa0015;
 		font-size: 24px;
@@ -101,11 +106,45 @@ p {
 em {
 	font-style:italic;
 }
-#container {
+header {
+	padding: 20px 0;
+}
+footer {
+	padding: 20px 0;
+}
+h2.home {
+	color: #aa0015;
+}
+.error {
+	width:60%;
+	margin: 10px auto;
+	background-color:rgba(255, 0, 0, 0.4);
+	border:1px solid #ff4444;
+	text-align:center;
+	padding: 4px 0;
+	border-radius: 8px;
+}
+.content {
+	min-height:100%;
+	margin-bottom:-143px;
+}
+
+/* forms */
+
+#container-salmon {
 	width:50%;
+	max-width:350px;
 	margin: 0 auto;
-	background-color:rgba(0, 0, 0, 0.5);
-	padding: 15px 15px 15px 15px;
+	background-color:rgba(178, 107, 107, 0.7);
+	padding: 30px 15px;
+	border-radius: 8px;
+}
+.container-dark {
+	width:80%;
+	margin:0 auto;
+	background-color:rgba(0, 0, 0, .5);
+	padding: 5px 15px;
+	border-radius:8px;
 }
 .form {
 	margin: 0 auto;
@@ -114,4 +153,23 @@ em {
 	text-align:center;
 	margin: 0 auto;
 	}
+}
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+	width:100%;
+	border-radius:5px;
+	border:1px solid #5C2A19;
+	font-size:16px;
+	line-height:20px;
+	margin:6px 0 15px 0;
+	background-color: #FFF6EE;
+	color:#5C2A19;
+}
+input[type='submit'] {
+	margin-top: 10px;
+	background-color: #FFF6EE;
+	color:#5C2A19;
+	border:1px solid #5C2A19;
+	border-radius:5px;
 }

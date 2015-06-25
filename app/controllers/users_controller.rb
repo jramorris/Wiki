@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   		flash[:success] = "Welcome!"
   	  redirect_to user_path(@user)
   	else
-  		flash.now[:danger] = "invalid signup information"
+  		flash.now[:alert] = "invalid signup information"
   		render :new
   	end
   end
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
   		flash[:success] = "User updated"
   		redirect_to user_path(@user)
   	else
-  		flash.now[:danger] = 'Invalid information'
+  		flash.now[:alert] = 'Invalid information'
   		render 'users/edit'
   	end
   end
